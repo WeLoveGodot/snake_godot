@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://m5x7.tres" type="DynamicFont" id=2]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 52.7662
+margin_top = 58.9046
+margin_right = 114.766
+margin_bottom = 78.9046
+custom_fonts/font = ExtResource( 2 )
+text = "Start"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 50.7836
+margin_top = 22.5973
+margin_right = 116.784
+margin_bottom = 52.5973
+custom_fonts/font = ExtResource( 2 )
+text = "Snake"
+align = 1
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
